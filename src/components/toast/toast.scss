@@ -1,0 +1,59 @@
+@import '../../assets/styles/vars.scss';
+@import '../../assets/styles/rem.scss';
+// .toast {
+//     position: fixed;
+//     padding: px2rem(20);
+//     background: rgba(0, 0, 0, 0.7);
+//     z-index: 11009;
+//     border-radius: px2rem(8);
+//     text-align: center;
+//     max-width: 80%;
+//     transform: translate3d(-50%, -50%, 0) scale(1);
+//     /* iphone5 兼容异常 添加以下兼容 以供测试 */
+//     -ms-transform: translate3d(-50%, -50%, 0) scale(1);
+//     /* IE 9 */
+//     -moz-transform: translate3d(-50%, -50%, 0) scale(1);
+//     /* Firefox */
+//     -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+//     /* Safari 和 Chrome */
+//     -o-transform: translate3d(-50%, -50%, 0) scale(1);
+//     /* Opera */
+//     transition-property: transform, opacity;
+//     transition-duration: 400ms;
+//     color: $color-text;
+//     .toast-text {
+//         font-size: px2rem(24);
+//         color: #fff;
+//     }
+//     .toast-icon {
+//         font-size: 1.8rem;
+//     }
+// }
+.toast-pop-enter-active {
+    // opacity: 1;
+    transition: all .5s;
+}
+
+.toast-pop-enter {
+    transform: translate3d(-50%, -50%, 0) scale(0.815);
+}
+
+.toast-pop-enter,
+.toast-pop-leave-active {
+    opacity: 0;
+}
+
+.placetop {
+    top: 10%;
+    left: 50%;
+}
+
+.placemiddle {
+    left: 50%;
+    top: 50%;
+}
+
+.placebottom {
+    bottom: 10%;
+    left: 50%;
+}

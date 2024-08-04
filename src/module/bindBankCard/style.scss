@@ -1,0 +1,120 @@
+@import './var.scss';
+div,
+ul,
+li,
+p,
+span {
+    color: inherit;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+* {
+    /*     -webkit-tap-highlight-color: rgba(255, 255, 255, 0); */
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    width: 16rem;
+    margin: 0 auto;
+}
+
+.page {
+    position: absolute;
+    width: px2rem(1080);
+    top: 0;
+}
+
+.blue-border {
+    display: inline-block;
+    padding: 0 px2rem(20);
+    color: $tipsColor;
+    border: 1px solid $tipsColor;
+    font-size: px2rem(40);
+    border-radius: px2rem(10);
+}
+
+
+/* 橙黄背景色 */
+
+.bgffc427 {
+    background-color: #ffc427;
+}
+
+
+/* 下一步按钮样式 */
+
+.nextstep {
+    width: px2rem(1020);
+    height: px2rem(130);
+    margin: 0 auto;
+    background-color: #ffc427;
+    text-align: center;
+    font-size: px2rem(52);
+    line-height: px2rem(130);
+    color: #000;
+    border-radius: px2rem(15);
+}
+
+
+/* 前后0.5px的边框 */
+
+.borderDown {
+    position: relative;
+    &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #d8d8d8;
+        position: absolute;
+        left: px2rem(32);
+        bottom: 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+
+.borderUp {
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #d8d8d8;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+
+.borderBoth {
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #d8d8d8;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #d8d8d8;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+

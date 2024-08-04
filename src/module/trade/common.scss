@@ -1,0 +1,86 @@
+@import 'src/style.scss';
+em,
+i {
+    font-style: normal;
+}
+
+.aui-popup__hd {
+    font-size: $auiFontSizeLevel3;
+    text-align: center;
+    color: #666;
+    line-height: px2rem(100);
+}
+
+.coupon-item {
+    font-size: $auiFontSizeLevel7;
+    &__num {
+        color: $auiTipsColor;
+        font-size: $auiFontSizeLevel5;
+        em {
+            font-size: $auiFontSizeLevel1;
+        }
+    }
+    // &__desc {
+    //     color: $auiTipsColor;
+    // }
+    &__date {
+        color: $auiTextColorAssistant;
+    }
+}
+
+.aui-fixedbottom:before {
+    content: '';
+    height: 1px;
+    border-top: 1px solid $auiLineColorLight;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: scaleY(.5);
+    -webkit-transform: scaleY(.5);
+    overflow: hidden;
+}
+
+.footer-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    &__account {
+        width: px2rem(460);
+        padding: px2rem(38) 0 0 px2rem(32);
+        font-size: $auiFontSizeLevel7;
+        line-height: 100%;
+        .price {
+            font-size: px2rem(44);
+            margin-right: px2rem(22);
+        }
+        .fs28 {
+            font-size: $auiFontSizeLevel5;
+        }
+        .fs36 {
+            font-size: $auiFontSizeLevel2;
+        }
+        .cc1 {
+            color: $auiAttentionColor;
+        }
+        .fwb {
+            font-weight: 700;
+        }
+    }
+    &__btn {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        &_disabled {
+            background: $auiTextColorLight
+        }
+    }
+}

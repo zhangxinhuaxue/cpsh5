@@ -1,0 +1,156 @@
+@import 'src/style.scss';
+
+.mr4 {
+    margin-right: px2rem(4);
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;
+
+    .img-wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        div {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .tag1 {
+        display: block;
+        min-width: px2rem(92);
+        height: px2rem(32);
+        line-height: px2rem(32);
+        padding: 0 px2rem(4);
+        text-align: center;
+        background-color: #FF3E00;
+        color: #fff;
+        font-size: px2rem(20);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .tag2 {
+        width: 100%;
+        // height: 29.7%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        // overflow: hidden;
+    }
+}
+
+.product-info {
+    overflow: hidden;
+
+    .desc {
+        color: #424243;
+        overflow: hidden;
+    }
+
+    .desc-tag {
+        display: inline-block;
+        height: px2rem(28);
+        line-height: px2rem(28);
+        margin-top: px2rem(2);
+        padding: 0 px2rem(8);
+        border-radius: px2rem(15);
+        background-color: #FF3E00;
+        color: #fff;
+        font-size: px2rem(20);
+        vertical-align: top;
+    }
+
+    .sea {
+        background-color: #671AED;
+    }
+
+    .stage {
+        color: #424243;
+
+        ::v-deep span {
+            font-size: px2rem(20);
+            color: #FF3E00;
+            margin-right: px2rem(8);
+
+            em {
+                font-style: normal;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .discount {
+        height: px2rem(36);
+        line-height: px2rem(35);
+        font-size: 0;
+        white-space: nowrap;
+
+        span {
+            margin-right: px2rem(8);
+            vertical-align: middle;
+        }
+
+        .discount-tag1 {
+            display: inline-block;
+            width: px2rem(56);
+            height: px2rem(28);
+        }
+
+        .discount-tag {
+            display: inline-block;
+            height: px2rem(28);
+            line-height: px2rem(29);
+            padding: 0 px2rem(8);
+            font-size: px2rem(20);
+            color: #FF3E00;
+            position: relative;
+
+            &:before {
+                content: '';
+                pointer-events: none;
+                /* 防止点击触发 */
+                box-sizing: border-box;
+                position: absolute;
+                width: 200%;
+                height: 200%;
+                left: 0;
+                top: 0;
+                border-radius: px2rem(28);
+                border: 1px solid #FF3E00;
+                transform: scale(0.5);
+                transform-origin: 0 0;
+            }
+        }
+    }
+
+    .price {
+        display: flex;
+        justify-content: space-between;
+
+        p:first-child {
+            font-size: px2rem(22);
+            color: #424243;
+        }
+
+        p:last-child {
+            font-size: px2rem(22);
+            color: #A1A1A1;
+        }
+    }
+}
+
+.price__desc {
+    color: #FF3E00;
+    font-size: px2rem(24);
+}
+
+.stage__desc {
+    color: #424243;
+    font-size: px2rem(22);
+}

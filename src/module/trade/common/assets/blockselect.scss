@@ -1,0 +1,127 @@
+/* created by zhaozhisheng on 05/15/2017 */
+
+.select_picker .aui-popup .aui-popup_content .aui-popup__bd {
+    position: absolute;
+    margin-bottom: 0;
+}
+
+.aui-popup__bd {
+    -webkit-mask-box-image: linear-gradient(to top, transparent, transparent 5%, white 20%, white 80%, transparent 95%, transparent);
+    overflow: hidden !important;
+}
+
+.icon_close_pop {
+    position: absolute;
+    width: px2rem(90);
+    height: px2rem(90);
+    left: px2rem(0);
+    top: px2rem(0);
+    .icon_close1 {
+        font-size: $auiFontSizeLevel6;
+        line-height: px2rem(90);
+    }
+}
+
+.aui-cells {
+    .aui-cell:hover,
+    .aui-cell:visited,
+    .aui-cell:link,
+    .aui-cell:active {
+        background-color: #fff;
+    }
+}
+
+#auiContent {
+    height: px2rem(600);
+}
+
+.block_selected {
+    width: 100%;
+    height: px2rem(80);
+    position: absolute;
+    left: 0;
+    top: px2rem(260);
+    background-color: transparent;
+    &:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $auiLineColorLight;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform-origin: 0 0;
+        transform: scaleY(0.8);
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $auiLineColorLight;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform-origin: 0 100%;
+        transform: scaleY(0.8);
+    }
+}
+
+.aui-popup__hd {
+    position: relative;
+    font-size: $auiFontSizeLevel3;
+    text-align: center;
+    color: #666;
+    line-height: px2rem(100);
+    &:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $auiBgColorDefault;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: scaleY(0.8);
+    }
+}
+
+.aui-popup {
+    position: fixed;
+    // z-index: 100;
+}
+
+.aui-cell:first-child:before {
+    display: block;
+}
+
+
+/* fade  slide-up */
+
+.fade-in-enter-active {
+    transition: all .3s ease;
+}
+
+.fade-in-enter {
+    opacity: 0;
+}
+
+.slide-enter-active {
+    transition: all .5s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.slide-enter {
+    -webkit-transform: translate(30px, 0);
+    transform: translate(30px, 0);
+}
+
+.slide-up-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-up-enter,
+.slide-up-leave-active {
+    transition: all .3s ease;
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+}

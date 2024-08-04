@@ -1,0 +1,18 @@
+.h180 {
+    height: px2rem(180);
+    ::v-deep .mui-cell__hd_icon{
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+.cell__tag__img{
+    display: inline-block;
+    height: px2rem(32);
+    vertical-align: middle;
+
+    img{
+        height: 100%;
+        width:auto;
+    }
+}

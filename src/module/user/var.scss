@@ -1,0 +1,25 @@
+@import 'src/assets/styles/aui-vars.scss';
+@import 'src/assets/styles/rem.scss';
+@import 'src/assets/styles/mixins.scss';
+$designWidth: 1080;
+@mixin icon($width, $height, $imgName) {
+    display: inline-block;
+    width: px2rem($width);
+    height: px2rem($height);
+    background: url($imgName) no-repeat center;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+@mixin line {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e4e4e4;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}

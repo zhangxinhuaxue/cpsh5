@@ -1,0 +1,114 @@
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s ease;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.scale-enter-active {
+    animation: scaleFadeIn .3s ease;
+}
+.scale-leave-active {
+    animation: scaleFadeOut .3s ease;
+}
+@keyframes scaleFadeIn {
+    0% {
+        transform: scale3d(.2, .2, .2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+@keyframes scaleFadeOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+.fade-offset-enter-active {
+    animation: fadeInDown .3s ease;
+}
+.fade-offset-leave-active {
+    animation: fadeOutUp .3s ease;
+}
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -40%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(0, -40%, 0);
+    }
+  }
+.flip-enter-active {
+    animation: flipIn .4s ease;
+}
+.flip-leave-active {
+    animation: flipOut .4s ease;
+}
+@keyframes flipIn {
+    from {
+        opacity: 0;
+        transform: rotateY(-100deg);
+        -webkit-transform: rotateY(-100deg);
+    }
+  
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+        -webkit-transform: rotateY(0deg);
+    }
+}
+@keyframes flipOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: rotateY(-100deg);
+        -webkit-transform: rotateY(-100deg);
+    }
+}
+.slide-out-enter-active,
+.slide-out-leave-active,
+.slide-in-enter-active,
+.slide-in-leave-active {
+  will-change: transform;
+  transition: all 300ms;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+.slide-out-enter {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+.slide-out-leave-active {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.slide-in-enter {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.slide-in-leave-active {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}

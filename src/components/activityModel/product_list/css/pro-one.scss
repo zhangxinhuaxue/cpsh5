@@ -1,0 +1,104 @@
+@import 'src/assets/styles/vars.scss';
+@import 'src/assets/styles/rem.scss';
+$designWidth: 750;
+.product_one {
+
+    .pl__pro {
+        position: relative;
+        width: 100%;
+        height: px2rem(260);
+        margin-bottom: px2rem(10);
+        padding: px2rem(20);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+    }
+
+    .pro {
+        &__imgbox {
+            height: 100%;
+            width: px2rem(220);
+        }
+
+        &__content {
+            width: px2rem(440);
+            padding-right: px2rem(20);
+            &1{
+                height: px2rem(147);
+            }
+            h4 {
+                font-size: px2rem(28);
+                line-height: px2rem(32);
+                margin-bottom: px2rem(7);
+            }
+        }
+
+        &__benefit {
+            height: px2rem(32);
+
+            span {
+                font-size: px2rem(20);
+                padding: px2rem(6) px2rem(8);
+                &:after {
+                    border-radius: px2rem(34);
+                }
+            }
+        }
+
+        &__sales {
+            clear: both;
+            color: #A1A1A1;
+            font-size: px2rem(22);
+            line-height: 1;
+            padding: px2rem(10) 0;
+        }
+        &__monthprice{
+            font-size: px2rem(20);
+            line-height: px2rem(30);
+            .pro__pricenum {
+                font-size: px2rem(32);
+            }
+            .pro__months {
+                font-size: px2rem(22);
+            }
+        }
+        &__price {
+            line-height: px2rem(22);
+        }
+
+        &__btn {
+            position: absolute;
+            top: px2rem(173);
+            right: px2rem(20);
+            width: px2rem(144);
+            height: px2rem(48);
+            line-height: px2rem(48);
+            text-align: center;
+            color: #fff;
+            border-radius: px2rem(24);
+            font-size: px2rem(24);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        &__noPrice {
+            font-size: px2rem(28);
+            color: #FF3E00;
+            line-height: px2rem(36);
+            margin-bottom: px2rem(8);
+        }
+        &__noMonthPrice {
+            font-size: px2rem(24);
+            color: #424243;
+            line-height: px2rem(36);
+        }
+    }
+}

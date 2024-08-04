@@ -1,0 +1,190 @@
+@import 'src/style.scss';
+
+.aui-page {
+    font-size: px2rem(26);
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.fb {
+    font-weight: bold;
+}
+
+.m0 {
+    margin: 0 !important;
+}
+
+.mt10 {
+    margin-top: px2rem(10) !important;
+}
+
+.mr40 {
+    margin-right: px2rem(40);
+}
+
+.mt20 {
+    margin-top: px2rem(20);
+}
+
+.mb20 {
+    margin-bottom: px2rem(20);
+}
+
+.ml10 {
+    margin-left: px2rem(10);
+}
+
+.ml20 {
+    margin-left: px2rem(20);
+}
+
+.pl12 {
+    padding-left: px2rem(12);
+}
+
+.pr12 {
+    padding-right: px2rem(12);
+}
+
+.pt8 {
+    padding-top: px2rem(8);
+}
+
+.pt12 {
+    padding-top: px2rem(12);
+}
+
+.pl24 {
+    padding-left: px2rem(24);
+}
+
+.pr24 {
+    padding-right: px2rem(24);
+}
+
+.pl32 {
+    padding-left: px2rem(32);
+}
+
+.pt24 {
+    padding-top: px2rem(24);
+}
+
+.fs24 {
+    font-size: px2rem(24);
+}
+
+.fs26 {
+    font-size: px2rem(26);
+}
+
+.fs28 {
+    font-size: px2rem(28);
+}
+
+.fs30 {
+    font-size: px2rem(30);
+}
+
+.fs32 {
+    font-size: px2rem(32);
+}
+
+.fs100 {
+    font-size: px2rem(100);
+}
+
+.c-primary {
+    color: $auiColorPrimary;
+}
+
+.c-danger {
+    color: $auiColorWarn;
+}
+
+.c-2 {
+    color: $auiTextColorImportant;
+}
+
+.c-6 {
+    color: $auiTextColorGeneral;
+}
+
+.c-9 {
+    color: $auiTextColorAssistant;
+}
+
+.c-c {
+    color: $auiTextColorLight;
+}
+
+.ell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+.aui-split_line {
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        border-top: solid 1px $auiLineColorLight;
+        position: absolute;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        left: 0;
+        top: 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+
+a.aui-btn_small-bg,
+button.aui-btn_small-bg,
+input.aui-btn_small-bg {
+    border-radius: px2rem(26);
+}
+
+.aui-cols {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0;
+}
+
+@for $i from 1 to 12 {
+    .aui-col-#{$i} {
+        -webkit-box-flex: $i;
+        -webkit-flex: $i;
+        flex: $i;
+        overflow: hidden;
+    }
+}

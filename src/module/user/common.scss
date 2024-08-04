@@ -1,0 +1,17 @@
+.aui-protocol {
+    font-size: px2rem(38);
+    line-height: px2rem(140);
+    padding-left: px2rem(60);
+    background: url(../img/agree.png) no-repeat left center;
+    background-size: px2rem(41);
+    color: #222;
+    a {
+        color: #76d0ff;
+    }
+}
+
+.page-bd__other {
+    display: flex;
+    justify-content: space-between;
+    font-size: px2rem(38);
+}

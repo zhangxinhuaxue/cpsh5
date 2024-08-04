@@ -1,0 +1,45 @@
+@import 'src/assets/styles/rem.scss';
+$designWidth: 750;
+
+.fade-in-enter-active {
+    transition: all .3s ease;
+}
+
+.fade-in-enter {
+    opacity: 0;
+}
+
+.slide-enter-active {
+    transition: all .5s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.slide-enter {
+    -webkit-transform: translate(30px, 0);
+    transform: translate(30px, 0);
+}
+
+.slide-up-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-up-enter,
+.slide-up-leave-active {
+    transition: all .3s ease;
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+}
+
+.aui-popup .aui-popup_content .aui-popup__bd {
+    position: static;
+    top: 0;
+    bottom: 0;
+    min-height: px2rem(300);
+    max-height: px2rem(690);
+    overflow-y: scroll;
+    margin-bottom: px2rem(100);
+}
+.aui-popup .aui-popup_content {
+    height: auto;
+}

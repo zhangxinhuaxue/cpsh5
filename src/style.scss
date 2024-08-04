@@ -1,0 +1,53 @@
+@import 'src/assets/styles/aui-vars.scss';
+@import 'src/assets/styles/rem.scss';
+@import 'src/assets/styles/mixins.scss';
+$designWidth: 750;
+
+
+.mui-btn_primary, a.aui-btn_full, .mui-btn_primary:active,  .aui-btn_primary, .aui-btn_primary:active{
+    border-color: var(--auiColorPrimary);
+    background-color: var(--auiColorPrimary);
+    border-radius: var(--auiButtonRadiusLarge);
+    color: var(--auiButtonTextColor);
+    &.mui-btn_round {
+        border-radius: var(--auiButtonRadiusLarge);
+    }
+}
+
+.mui-btn_small.mui-btn_round {
+    border-radius: var(--auiButtonRadiusLarge);
+}
+.mui-dialog__btn_primary {
+    color: var(--auiTipsColor)!important;
+}
+.mui-btn.disabled {
+    color: #999;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+.aui-switch-cp__input:checked~.aui-switch-cp__box, .aui-switch:checked {
+    background-color: var(--auiColorPrimary);
+}
+.aui-tag_border {
+    border-color: var(--auiTipsColor);
+    color: var(--auiTipsColor);
+}
+.aui-vcode-btn {
+    color: var(--auiTipsColor)!important;
+}
+
+.mui-picker__ft{
+  .mui-btn_primary,
+  .mui-btn_primary:active {
+    background-color: #4286ff ;
+    color: #fff;
+    border-color: #4286ff;
+    &.mui-btn_round {
+      border-radius:  0.08rem;
+    }
+  }
+}
+
+.mui-popup {
+    z-index: 1001;
+}

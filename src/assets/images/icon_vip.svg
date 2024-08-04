@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="34px" viewBox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2A2824" offset="0%"></stop>
+            <stop stop-color="#454545" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E3D9BE" offset="0%"></stop>
+            <stop stop-color="#E3D9BE" offset="17.7%"></stop>
+            <stop stop-color="#CEB16C" offset="99.2%"></stop>
+            <stop stop-color="#CEB16C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0084758%" y1="0.00749039624%" x2="50.0084758%" y2="99.9914395%" id="linearGradient-3">
+            <stop stop-color="#E7DDC2" offset="0%"></stop>
+            <stop stop-color="#CBAB62" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14.4144718,20.8266022 L13.1802583,14.6125365 L5.15417748,14.6125365 L4.0057637,20.8266022 L0.175618033,20.8266022 L3.54244489,2.9919249 C3.84480766,1.39033656 5.16112835,0.218969739 6.51198617,0.218969739 L11.5567961,0.218969739 C12.9078711,0.218969739 14.2367903,1.39033656 14.556313,2.9919249 L18.1149404,20.8266022 L14.4144718,20.8266022 Z M11.3925818,5.61118226 C11.2598637,4.9419243 10.7079213,4.4523847 10.1466387,4.4523847 L8.05116908,4.4523847 C7.48988646,4.4523847 6.94337444,4.9419243 6.81760716,5.61118226 L5.85773569,10.8051533 L12.4241341,10.8051533 L11.3925818,5.61118226 Z" id="path-4"></path>
+        <linearGradient x1="0%" y1="50.001165%" x2="99.9836009%" y2="50.001165%" id="linearGradient-6">
+            <stop stop-color="#E7DDC2" offset="0%"></stop>
+            <stop stop-color="#DDCCA0" stop-opacity="0" offset="36.2%"></stop>
+            <stop stop-color="#CBAC63" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商品详情页-未开通会员" transform="translate(-85.000000, -1120.000000)">
+            <g id="会员" transform="translate(0.000000, 1088.000000)">
+                <g id="2224" transform="translate(32.000000, 32.000000)">
+                    <g id="logo" transform="translate(53.000000, 0.000000)">
+                        <path d="M0,0 L31.2789075,0 C40.156268,5.51836573e-16 47.3527906,7.30581146 47.3527906,16.3179866 L47.3527906,17.2000399 C47.3527906,21.5278391 45.659297,25.6783828 42.6448592,28.7385989 C39.6304214,31.7988151 35.5419664,33.5180266 31.2789075,33.5180266 L25.4747153,33.5180266 C11.4054185,33.5180266 1.72299192e-15,21.9394014 0,7.65644342 L0,0 Z" id="圆角矩形_1_拷贝_2" fill="url(#linearGradient-1)"></path>
+                        <polygon id="路径" fill="url(#linearGradient-2)" points="36.2748442 13.89234 40.8363515 13.89234 40.8363515 15.87696 36.2748442 15.87696 36.2748442 20.7282533 34.3199124 20.7282533 34.3199124 15.87696 29.9756197 15.87696 29.9756197 13.89234 34.3199124 13.89234 34.3199124 9.04104664 36.2748442 9.04104664"></polygon>
+                        <g id="组_4" transform="translate(11.254433, 4.630780)">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-4"></use>
+                            </mask>
+                            <use id="矩形_5" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                            <path d="M-1.47977471,0.639488665 L2.44355604,0.639488665 C7.59206523,0.639488665 11.7657566,4.87656313 11.7657566,10.1032594 L-1.47977471,10.1032594 L-1.47977471,0.639488665 Z" id="矩形_6" fill="url(#linearGradient-6)" mask="url(#mask-5)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

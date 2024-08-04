@@ -1,0 +1,15 @@
+/**
+ *
+ * @author:      zhouqing
+ * @dateTime:    2017-05-15 14:49:03
+ * @description:
+ */
+
+@import 'src/style.scss';
+.pop-cells {
+    // padding: px2rem(32);
+    .pop-cells__title {
+        font-size: $auiFontSizeLevel5;
+        color: $auiTextColorGeneral;
+    }
+}

@@ -1,0 +1,68 @@
+@import 'src/style.scss';
+// 订单列表
+.order-list {
+    padding: px2rem(30) px2rem(32) 0;
+    font-size: $auiFontSizeLevel6;
+}
+
+// 订单详情
+.order__status {
+    font-size: $auiFontSizeLevel4;
+    line-height: px2rem(80);
+    padding: 0 px2rem(32);
+    &.bg-primary {
+        background-color: $auiColorPrimary;
+    }
+    &.bg-disabled {
+        background-color: $auiLineColorLight;
+    }
+}
+
+.product-cell {
+    padding-left: px2rem(32);
+    background-color: #fff;
+}
+
+.detailed-cells {
+    padding: px2rem(26) px2rem(32);
+    background-color: #fff;
+    margin-bottom: px2rem(20);
+}
+
+.detailed-cell {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    font-size: $auiFontSizeLevel6;
+    padding: px2rem(3) 0;
+    &__hd {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        overflow: hidden;
+        color: $auiTextColorAssistant;
+    }
+    &__ft {
+        color: $auiTextColorAssistant;
+        &~.detailed-cell__bd {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+        }
+    }
+}
+
+.top-line {
+    @include hairline(top)
+}
+
+.pr32 {
+    padding-right: px2rem(32);
+}
+
+.pl0 {
+    padding-left: 0;
+}

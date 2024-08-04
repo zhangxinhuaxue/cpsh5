@@ -1,0 +1,46 @@
+.cards {
+	margin: 0 px2rem(32);
+}
+
+.card {
+    display: flex;
+    padding: px2rem(30) px2rem(38) px2rem(30) px2rem(50) ;
+    border-radius: px2rem(20);
+    box-shadow: 0 px2rem(4) px2rem(13) px2rem(3) rgba(233,235,238,0.5);
+    align-items: center;
+
+    margin-bottom: px2rem(30);
+}
+
+.card-hd {
+	margin-right: px2rem(52);
+    img {
+        width: px2rem(68);
+    }
+}
+
+.card-bd {
+	flex: 1;
+    font-size: px2rem(36);
+}
+
+.card-ft {
+	text-align: right;
+}
+
+.card-sign_success {
+	color: #32CA64
+}
+
+.card-sign_arrow {
+	width: px2rem(40);
+}
+
+.cell-sub {
+    padding: px2rem(24) px2rem(32) px2rem(18);
+    color: #999999;
+    font-size: px2rem(24);
+}
+.mt0 {
+    margin-top: 0;
+}

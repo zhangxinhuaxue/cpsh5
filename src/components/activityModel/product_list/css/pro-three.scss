@@ -1,0 +1,69 @@
+@import 'src/assets/styles/vars.scss';
+@import 'src/assets/styles/rem.scss';
+$designWidth: 750;
+.product_three {
+    .pl {
+        &.notThree {
+            justify-content: flex-start;
+
+            .pl__pro {
+                margin-right: px2rem(10);
+
+                &:nth-child(3n) {
+                    margin-right: 0
+                }
+            }
+        }
+    }
+
+    .pl__pro {
+        width: px2rem(230);
+        height: px2rem(454);
+    }
+
+    .pro {
+        &__imgbox {
+            height: px2rem(230);
+            width: 100%;
+        }
+
+        &__content {
+            padding: 0 px2rem(10);
+            &1 {
+                height: px2rem(70);
+            }
+            h4 {
+                font-size: px2rem(25);
+                line-height: px2rem(30);
+                margin-top: px2rem(16);
+                margin-bottom: px2rem(4);
+            }
+        }
+        &__price{
+            line-height: 1;
+            margin-bottom: px2rem(8);
+        }
+
+        &__btn {
+            width: px2rem(197);
+            height: px2rem(44);
+            line-height: px2rem(44);
+            border-radius: px2rem(22);
+            font-size: px2rem(26);
+        }
+
+        &__noPrice {
+            font-size: px2rem(24);
+            color: #FF3E00;
+            line-height: px2rem(32);
+            margin-bottom: px2rem(6);
+            margin-top: px2rem(8);
+        }
+        &__noMonthPrice {
+            font-size: px2rem(20);
+            color: #424243;
+            line-height: px2rem(30);
+            margin-bottom: px2rem(8);
+        }
+    }
+}
